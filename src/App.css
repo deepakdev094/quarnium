@@ -1,0 +1,75 @@
+/* App.css */
+body {
+  margin: 0;
+  overflow-y: scroll;
+  font-family: 'Arial', sans-serif;
+  color: white;
+  overflow-x: hidden;
+  background-color: #323C29;
+
+  
+}
+
+canvas {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  pointer-events: auto !important;
+}
+
+.content-section {
+  opacity: 0;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  background-color: rgba(20, 20, 20, 0.7) !important;
+  backdrop-filter: blur(1px) !important;
+  z-index: 15;
+  position: relative;
+}
+
+.content-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #F59E0B
+  ; /* Bitcoin orange color */
+}
+
+.content-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #f59e0b;
+}
+
+.content-section p,
+.content-section li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.content-section ul {
+  padding-left: 1.5rem;
+}
+
+.content-section li {
+  margin-bottom: 0.5rem;
+}
+
+/* Add subtle text shadow for better readability against 3D background */
+h1, h2, p, li {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Ensure content wrapper takes full height and proper z-index */
+.content-wrapper {
+  min-height: 400vh;
+  position: relative;
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* Make the actual content clickable */
+.content-section {
+  pointer-events: auto;
+}
