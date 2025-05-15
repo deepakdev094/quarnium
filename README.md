@@ -1,3 +1,7 @@
+User can interact with 3D object when user scrolls down to the bottom , there user can increase or descrese the size of 3d object or rotate the object also
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
