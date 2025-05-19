@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: "Orbitron", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #f0f0f0;
+}
+
+canvas {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  pointer-events: auto !important;
+}
+
+.content-section {
+  background: rgba(18, 21, 34, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  color: #f3f3f3;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+.content-section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+}
+.content-section h1,
+.content-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #7f5af0;
+}
+
+.content-section p,
+.content-section li {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #c9d1d9;
+}
+
+.content-section ul {
+  padding-left: 1.5rem;
+}
+
+.content-section li {
+  margin-bottom: 0.5rem;
+}
+
+.content-wrapper {
+  min-height: 400vh;
+  position: relative;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.content-section {
+  pointer-events: auto;
+}
+
+button {
+  background-color: #7f5af0;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #7f5af0;
+}
